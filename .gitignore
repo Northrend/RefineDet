@@ -1,0 +1,8 @@
+*.pyc
+*.so
+build
+.build_release
+python/caffe/proto
+*.caffemodel
+*.solverstate
+examples/juggdet
