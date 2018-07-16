@@ -8,7 +8,7 @@ redo=false
 data_root_dir="/workspace/dataset/blademaster/juggernaut/juggdet/"
 dataset_name="juggdet"
 mapfile="$root_dir/data/$dataset_name/labelmap_$dataset_name.prototxt"
-listfile="/workspace/dataset/blademaster/juggernaut/juggdet/juggdet_0503/Lists/annotations_refinedet_style/juggdet_0503_train.caffetxt"
+listfile="/workspace/dataset/blademaster/juggernaut/juggdet/juggdet_0503/Lists/annotations_refinedet_style/juggdet_0503_train_0712.caffetxt"
 anno_type="detection"
 label_type="json"
 db="lmdb"
@@ -16,7 +16,7 @@ min_dim=0
 max_dim=0
 width=0
 height=0
-outputpath="/workspace/dataset/blademaster/juggernaut/juggdet/juggdet_0503/Cache/juggdet_0503_train_$db"
+outputpath="/workspace/dataset/blademaster/juggernaut/juggdet/juggdet_0503/Cache/juggdet_0503_train_0712_$db"
 
 extra_cmd="--encode-type=jpg --encoded"
 if $redo

@@ -1,0 +1,20 @@
+train_net: "train.prototxt"
+base_lr: 0.0005
+display: 20
+max_iter: 45000     # 200e 
+lr_policy: "multistep"
+gamma: 0.2
+momentum: 0.9
+weight_decay: 0.0003
+snapshot: 1000 
+snapshot_prefix: "/workspace/blademaster/model/juggdet_v4.3_refinedet_vgg_16_reduce_512/juggdet-v4.3"
+solver_mode: GPU
+device_id: 0
+debug_info: false
+snapshot_after_train: true
+average_loss: 20 
+stepvalue: 7000     # 30e
+stepvalue: 22000    # 150e
+iter_size: 1
+type: "SGD"
+

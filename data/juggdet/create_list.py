@@ -22,13 +22,13 @@ img_ext = "jpg"
 anno_dir = "juggdet_0503/Lists/annotations_refinedet_style"
 anno_ext = "json"
 
-train_list_file = "/workspace/dataset/blademaster/juggernaut/juggdet/juggdet_0503/Lists/annotations_refinedet_style/juggdet_0503_train.caffetxt"
+train_list_file = "/workspace/dataset/blademaster/juggernaut/juggdet/juggdet_0503/Lists/annotations_refinedet_style/juggdet_0503_train_0712.caffetxt"
 # test_list_file = "{}/juggdet_0503_test.txt".format(CURDIR)
 
 # Create training set.
 # We follow Ross Girschick's split.
 if redo or not os.path.exists(train_list_file):
-    datasets = ['train_0503']
+    datasets = ['juggdet_0503_train_0712']
     img_files = []
     anno_files = []
     for dataset in datasets:
