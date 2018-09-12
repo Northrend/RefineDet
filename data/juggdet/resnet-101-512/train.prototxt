@@ -13,7 +13,6 @@ layer {
     mean_value: 117.0
     mean_value: 123.0
     force_color: true
-    scale: 0.017
     resize_param {
       prob: 1.0
       resize_mode: WARP
@@ -48,7 +47,7 @@ layer {
   }
   data_param {
     source: "/workspace/northrend/juggdet/juggdet_0503/Cache/juggdet_0503_train_lmdb"
-    batch_size: 16
+    batch_size: 3 
     backend: LMDB
   }
   annotated_data_param {
@@ -7809,7 +7808,7 @@ layer {
     overlap_threshold: 0.5
     use_prior_for_matching: true
     background_label_id: 0
-    use_difficult_gt: true
+    use_difficult_gt: false 
     neg_pos_ratio: 3.0
     neg_overlap: 0.5
     code_type: CENTER_SIZE
@@ -7881,7 +7880,7 @@ layer {
     overlap_threshold: 0.5
     use_prior_for_matching: true
     background_label_id: 0
-    use_difficult_gt: true
+    use_difficult_gt: false 
     neg_pos_ratio: 3.0
     neg_overlap: 0.5
     code_type: CENTER_SIZE
