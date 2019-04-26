@@ -1,7 +1,7 @@
 name: "juggdet_v4.1_train"
 input: "data"
 input_shape {
-  dim: 8
+  dim: 1
   dim: 3
   dim: 512
   dim: 512
